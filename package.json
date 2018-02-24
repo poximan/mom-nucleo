@@ -1,0 +1,123 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "mom-nucleo@^1.0.5",
+        "scope": null,
+        "escapedName": "mom-nucleo",
+        "name": "mom-nucleo",
+        "rawSpec": "^1.0.5",
+        "spec": ">=1.0.5 <2.0.0",
+        "type": "range"
+      },
+      "D:\\documentos\\hugo\\Dropbox\\uni\\sist_distr\\labo\\servers\\mama_node"
+    ],
+    [
+      {
+        "raw": "mom-nucleo@^1.0.6",
+        "scope": null,
+        "escapedName": "mom-nucleo",
+        "name": "mom-nucleo",
+        "rawSpec": "^1.0.6",
+        "spec": ">=1.0.6 <2.0.0",
+        "type": "range"
+      },
+      "D:\\documentos\\hugo\\Dropbox\\uni\\sist_distr\\labo\\servers\\mama_node"
+    ],
+    [
+      {
+        "raw": "mom-nucleo@^1.0.7",
+        "scope": null,
+        "escapedName": "mom-nucleo",
+        "name": "mom-nucleo",
+        "rawSpec": "^1.0.7",
+        "spec": ">=1.0.7 <2.0.0",
+        "type": "range"
+      },
+      "D:\\documentos\\hugo\\Dropbox\\uni\\sist_distr\\labo\\servers\\mama_node"
+    ],
+    [
+      {
+        "raw": "mom-nucleo@^1.0.8",
+        "scope": null,
+        "escapedName": "mom-nucleo",
+        "name": "mom-nucleo",
+        "rawSpec": "^1.0.8",
+        "spec": ">=1.0.8 <2.0.0",
+        "type": "range"
+      },
+      "D:\\documentos\\hugo\\Dropbox\\uni\\sist_distr\\labo\\servers\\mama_node"
+    ]
+  ],
+  "_from": "mom-nucleo@^1.0.8",
+  "_id": "mom-nucleo@1.0.8",
+  "_inCache": true,
+  "_location": "/mom-nucleo",
+  "_nodeVersion": "6.11.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/mom-nucleo_1.0.8_1519333484837_0.11674701717514147"
+  },
+  "_npmUser": {
+    "name": "poximan",
+    "email": "poxi_man@yahoo.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "mom-nucleo@^1.0.8",
+    "scope": null,
+    "escapedName": "mom-nucleo",
+    "name": "mom-nucleo",
+    "rawSpec": "^1.0.8",
+    "spec": ">=1.0.8 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/mom-nucleo/-/mom-nucleo-1.0.8.tgz",
+  "_shasum": "d7e1da95756c76b211316f3338b40c31d2459066",
+  "_shrinkwrap": null,
+  "_spec": "mom-nucleo@^1.0.8",
+  "_where": "D:\\documentos\\hugo\\Dropbox\\uni\\sist_distr\\labo\\servers\\mama_node",
+  "author": {
+    "name": "jose devia, hugo donato"
+  },
+  "dependencies": {
+    "mom-bus-comunic": "^1.0.8"
+  },
+  "description": "componente central de una arquitectura mom (message-oriented middleware). incluye los modulos de reloj vectorial y corte consistente. basado en intercambio de mensajes con soporte de eventEmitter. su comportamiento no esta ligado al negocio (es agnostico)",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "d7e1da95756c76b211316f3338b40c31d2459066",
+    "tarball": "https://registry.npmjs.org/mom-nucleo/-/mom-nucleo-1.0.8.tgz",
+    "fileCount": 10,
+    "unpackedSize": 11286
+  },
+  "keywords": [
+    "mom",
+    "middleware",
+    "message",
+    "queue",
+    "async",
+    "event",
+    "driven"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "poximan",
+      "email": "poxi_man@yahoo.com"
+    }
+  ],
+  "name": "mom-nucleo",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.8"
+}

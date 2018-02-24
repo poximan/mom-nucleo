@@ -44,6 +44,7 @@ param1 = {String[.String]...} lista de suscriptores que recibiran el mensaje en 
 param2 = carga util del mensaje. De formato json libre.
 Los mensajes entrantes/salientes se construyen pensando en capas. Cada capa tiene su encabezado. El middleware solo lee y escribe su capa, por lo tanto la carga util (este parametro) no esta acoplado al middleware, pudiendo ser de formato a medida del negocio.
 
+### Publicar un pedido de corte consistente
 ```
 mw.propagarCorte()
 ```

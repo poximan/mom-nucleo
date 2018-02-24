@@ -1,7 +1,16 @@
 # Nucleo MOM (middleware-oriented message)
 Componente central de una arquitectura mom (message-oriented middleware). Basado en intercambio de mensajes asincronicos con soporte de eventEmitter. No esta ligado a ningun negocio particular.
 
-![alt text](https://github.com/poximan/mom-nucleo/tree/master/imagenes/nucleo.png "Arquitectura")
+![alt text](https://github.com/poximan/mom-nucleo/tree/master/imagenes/nucleo.png "Arquitectura")<br/>
+
+## Caso de estudio
+Aqui https://github.com/poximan/mama_node hay caso de estudio completo que implementa este modulo.<br/>
+
+## Configuracion inicial
+En propiedades.json debe especificarse:
+* El nombre del broker de mensajeria, que debe coincidir con una implementacion dentro de ./strategies.js.
+Deben implementarse todas sus interfaces.
+* La url de conexion al servidor de mensajeria usado.<br/>
 
 ## Parametros
 param 1 = {entero} indice del que es responsable en reloj vectorial.
@@ -16,8 +25,7 @@ param 5 = {entero} cantidad de confirmaciones externas para fin corte consistent
 
 param 6 = {[Object]} Estado actual del servidor. Es el arreglo de valores en memoria dinamica.
 
-param 7 = {Function} llamada a funcion de persistencia del negocio.
-<br/>
+param 7 = {Function} llamada a funcion de persistencia del negocio.<br/>
 
 ## Modo de uso
 

@@ -1,7 +1,7 @@
 # Nucleo MOM (middleware-oriented message)
 Componente central de una arquitectura mom (message-oriented middleware). Basado en intercambio de mensajes asincronicos con soporte de eventEmitter. No esta ligado a ningun negocio particular.
 
-![alt text](https://github.com/poximan/mom-nucleo/nucleo.png "Arquitectura")
+![alt text](https://github.com/poximan/mom-nucleo/imagenes/nucleo.png "Arquitectura")
 
 ## Parametros
 param 1 = {entero} indice del que es responsable en reloj vectorial.

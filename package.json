@@ -1,6 +1,6 @@
 {
   "name": "mom-nucleo",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Componente central de una arquitectura mom (message-oriented middleware). Basado en intercambio de mensajes asincronicos con soporte de eventEmitter. No esta ligado a ningun negocio particular.",
   "main": "index.js",
   "scripts": {

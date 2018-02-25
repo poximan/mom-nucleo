@@ -87,7 +87,7 @@ mw.sockRespuesta(socket);
 Ofrece servicio de socket abierto con concentrador/monitor al modulo de corte consistente.
 La operacion es reactiva, cuando se abre un socket monitor-servidor, se notifica.
 
-### Terceros: Corte Consistente -> Corte el proceso
+### Terceros: Corte Consistente -> Corte en proceso
 ```
 mw.corteEnProceso();
 ```

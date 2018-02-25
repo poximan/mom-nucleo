@@ -126,7 +126,7 @@ module.exports = function(
 
   module.corteEnProceso = function(){
     try {
-      return corte_consistente.corte_en_proceso;
+      return corte_consistente.corteEnProceso();
     } catch (e) {
       return false;
     } finally {}

@@ -138,7 +138,7 @@ module.exports = function(
   */
   module.iniciarCorte = function(){
 
-    if(module.existeModuloCC() && !module.corteEnProceso())
+    if(existeModuloCC() && !module.corteEnProceso())
       corte_consistente.iniciarCorte();
   }
 

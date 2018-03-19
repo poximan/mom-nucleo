@@ -15,9 +15,22 @@ module.exports = function(ex) {
   module.canal;
 
   amqp.connect(amqp_url, function(err, conn) {
-    conn.createChannel(function(err, ch) {
-      module.canal = ch;
-    });
+
+    var intervalo = setInterval(function(){
+
+      if(conn !== undefined){
+
+        console.log("PUBLICADOR: conexion establecida");
+        clearInterval(intervalo);
+
+        conn.createChannel(function(err, ch) {
+          module.canal = ch;
+        });
+      }
+      else {
+        console.log("PUBLICADOR: esperando conexion con broker");
+      }
+    }, 500);
   });
 
   module.publicar = function(reglas_ruteo, buffer){

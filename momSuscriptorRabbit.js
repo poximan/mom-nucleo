@@ -14,17 +14,28 @@ module.exports = function(cola, getMensaje) {
   var module = {};
 
   amqp.connect(amqp_url, function(err, conn) {
-    conn.createChannel(function(err, ch) {
 
-      ch.checkQueue(cola, function(err, q) {
+    var intervalo = setInterval(function(){
 
-        ch.consume(q.queue, function(buffer) {
-          // msg origianl es {fields, properties, content}
-          getMensaje(buffer);
-          ch.ack(buffer);
-        }, {noAck: false});
-      });
-    });
+      if(conn !== undefined){
+
+        console.log("SUSCRIPTOR: conexion establecida");
+        clearInterval(intervalo);
+
+        conn.createChannel(function(err, ch) {
+          ch.checkQueue(cola, function(err, q) {
+            ch.consume(q.queue, function(buffer) {
+              // msg origianl es {fields, properties, content}
+              getMensaje(buffer);
+              ch.ack(buffer);
+            }, {noAck: false});
+          });
+        });
+      }
+      else {
+        console.log("SUSCRIPTOR: esperando conexion con broker");
+      }
+    }, 500);
   });
 
   return module;

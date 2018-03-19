@@ -20,11 +20,14 @@ module.exports = function() {
       vaciarPendientes();
   }
 
-  setInterval(function(){
+  var intervalo = setInterval(function(){
 
-    if(publicador_rabbit.canal !== undefined)
+    if(publicador_rabbit.canal !== undefined){
+
+      clearInterval(intervalo);
       vaciarPendientes();
-  }, 3000);
+    }
+  }, 500);
 
   function vaciarPendientes(){
     while (publicaciones.length > 0) {

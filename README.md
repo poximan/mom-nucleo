@@ -1,7 +1,7 @@
 # Núcleo MOM (middleware-oriented message)
 Componente central de una arquitectura mom (message-oriented middleware). Basado en intercambio de mensajes asincronicos con soporte de eventEmitter. No esta ligado a ningún negocio particular.
 
-![](https://github.com/poximan/mom-nucleo/tree/master/imagenes/nucleo.png "Arquitectura")<br/>
+![Arq](https://github.com/poximan/mom-nucleo/blob/master/imagenes/nucleo.png?raw=true "Arquitectura")<br/>
 
 ## Caso de estudio
 Aquí https://github.com/poximan/mama_node hay caso de estudio completo que implementa este modulo.<br/>
